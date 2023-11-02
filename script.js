@@ -49,3 +49,11 @@ const leftPerson = () => {
     stand.textContent = standTab[counter];
     text.textContent = textTab[counter];
 }
+const suprise = () => {
+    counter = Math.floor(Math.random() * 4);
+
+    profile.style.backgroundImage = `url(img/${imgTab[counter]})`;
+    person.textContent = personTab[counter];
+    stand.textContent = standTab[counter];
+    text.textContent = textTab[counter];
+}
