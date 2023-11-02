@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reviews</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body onload="loadPerson()">
+    <h1>Our <span>Rev</span>iews</h1>
+    <div class="wrap">
+        <div class="profile"></div>
+        <p class="name"></p>
+        <p class="stand"></p>
+        <p class="text"></p>
+        <div class="arrow">
+            <div class="left"><img src="left-arrow.png" onclick="leftPerson()"></div>
+            <div class="right"><img src="right-arrow.png" onclick="rightPerson()"></div>
+        </div>
+        <button class="suprise">Suprise Me</button>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
