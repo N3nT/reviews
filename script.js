@@ -50,10 +50,19 @@ const leftPerson = () => {
     text.textContent = textTab[counter];
 }
 const suprise = () => {
-    counter = Math.floor(Math.random() * 4);
-
-    profile.style.backgroundImage = `url(img/${imgTab[counter]})`;
-    person.textContent = personTab[counter];
-    stand.textContent = standTab[counter];
-    text.textContent = textTab[counter];
+    let num = Math.floor(Math.random() * 4);
+    if(counter == num){
+        counter = Math.floor(Math.random() * 4);
+        profile.style.backgroundImage = `url(img/${imgTab[counter]})`;
+        person.textContent = personTab[counter];
+        stand.textContent = standTab[counter];
+        text.textContent = textTab[counter];
+    }
+    else{
+        counter = num;
+        profile.style.backgroundImage = `url(img/${imgTab[counter]})`;
+        person.textContent = personTab[counter];
+        stand.textContent = standTab[counter];
+        text.textContent = textTab[counter];
+    }
 }

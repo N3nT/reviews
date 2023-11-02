@@ -43,6 +43,17 @@ body .wrap .profile {
   margin-bottom: 20px;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 99;
+}
+body .wrap .circle {
+  width: 130px;
+  height: 130px;
+  background-color: #58ABDE;
+  border-radius: 100%;
+  z-index: 1;
+  position: absolute;
+  left: 900.5px;
+  top: 365px;
 }
 body .wrap .name {
   letter-spacing: 2px;
